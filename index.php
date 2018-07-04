@@ -1,4 +1,4 @@
 <?php
 // include('site/orgile/orgile.php');
 // pageHandler();
-include('orgile-includes/orgile-main.php');
+include(dirname(__FILE__) . '/orgile-includes/orgile-main.php');

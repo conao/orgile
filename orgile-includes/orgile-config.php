@@ -1,3 +1,3 @@
 <?php
 
-echo('load orgile-config.php');
+ChromePhp::info('load orgile-config.php');
