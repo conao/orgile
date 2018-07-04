@@ -1,4 +1,4 @@
-<?php // Time-stamp: <2011-11-27 Sun 16:21 orgile.php>
+<?php
 
 /*___________
   O R G I L E
@@ -7,10 +7,11 @@
   Used with classOrgile which is the very rough Org-Mode (http://orgmode.org/)
   file to HTML parser.
 
+  Copyright (c) 2018, Conao (Naoya Yamashita) <conao3@gmail.com>
   Copyright (c) 2011, 'Mash (Thomas Herbert) <letters@toshine.org>
   All rights reserved.
 
-  Version 20110918
+  Version 1.0
   For the latest version please see: http://toshine.org
 
   NOTE: If you would like to help me develop this tool properly rather then this

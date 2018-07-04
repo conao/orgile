@@ -1,4 +1,4 @@
-<?php // Time-stamp: <2011-11-27 Sun 16:21 classOrgile.php>
+<?php
 
 /*
   ______________________
@@ -7,10 +7,11 @@
   classOrgile a very rough Org-Mode (http://orgmode.org/) file to HTML parser.
   This class is part of the Orgile publishing tool but can be used as a 
   standalone class. Please see http://toshine.org.
+ 
+  Version 1.0
 
-  Version 20110418
-
-  Copyright (c) 2011 , 'Mash (Thomas Herbert) <letters@toshine.org>
+  Copyright (c) 2018, Conao (Naoya Yamashita) <conao3@gmail.com>
+  Copyright (c) 2011, 'Mash (Thomas Herbert) <letters@toshine.org>
   All rights reserved.
 
   This project was inspired by Dean Allen's "Textile" http://textile.thresholdstate.com/.
