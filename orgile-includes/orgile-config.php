@@ -1,2 +1,3 @@
 <?php
-define('ORGILE_INC', dirname(__FILE__) . '/');
+
+echo('load orgile-config.php');
