@@ -86,11 +86,11 @@
 
 // --------------------------------------------------[ DEFINITIONS ]--------------------------------------------------
 // Various definitions used across Orgile. Please do read through this file to see what else you can change.
-define('SITEURL','orgile.toshine.org'); // Site URL. No http/https or trailing slash!
-define('SITETITLE','Orgile: an Emacs Org-Mode file to HTML parser and publishing tool.'); // Site title.
-define('SITESUBTITLE','Orgile: an Emacs Org-Mode file to HTML parser and publishing tool.'); // Site subtitle.
-define('SITEAUTHOR','&#039;Mash (Thomas Herbert)'); // You.
-define('EMAIL', 'gro.enihsot@srettel'); // Main contact email (reversed) and CSS turns it back.
+define('SITEURL','conao3.com'); // Site URL. No http/https or trailing slash!
+define('SITETITLE','今日の実験ノート'); // Site title.
+define('SITESUBTITLE',''); // Site subtitle.
+define('SITEAUTHOR','Conao (Naoya Yamashita)'); // You.
+define('EMAIL', '');
 define('LICENSE','Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.'); // License description.
 define('LICENSEURL','http://creativecommons.org/licenses/by-nc-sa/3.0/'); // License URL.
 
@@ -163,14 +163,7 @@ function pageFooter() {
   $pageFooter = '
 <div id="footer">
 <footer>
-<ul id="footerList">
-<li><strong><span class="red">&#039;</span>to</strong> life is doxology.</li>
-<li><a href="http://orgile.toshine.org/" title="Orgile: an Emacs Org-Mode file parser and publishing tool." target="_blank">Orgile made.</a></li>
-<li><a href="http://orgmode.org/" title="Org-Mode - Your Life in Plain Text" target="_blank">Org-Mode.</a></li>
-<li><a href="http://www.gnu.org/software/emacs/" title="GNU Emacs is an extensible, customizable text editor and more." target="_blank">GNU Emacs.</a></li>
-<li><a href="http://www.debian.org" title="Debian GNU/Linux" target="_blank">Debian GNU/Linux.</a></li>
-<li><a href="http://www.linode.com/?r=cf21c6b4ea70d36fc9439efa23cd82d18a455e57" title="Linode.com Hosted" target="_blank">Linode.com hosted.</a></li>
-</ul>
+
 </footer>
 </div>';
   print $pageFooter . '</div><!--[ wrapper ]--></body></html>'; // Close HTML tags.
