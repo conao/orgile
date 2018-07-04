@@ -4,6 +4,7 @@ ChromePhp::info('load orgile-config.php');
 
 // define constants
 define('CONTENTDIR', ABSPATH . 'orgile-content/contents/');
+define('THEMEDIR', ABSPATH . 'orgile-content/themes/');
 
 // Unique keys for Cookie
 define('AUTH_KEY',         '~uy;W](Z|HmeM<,`mTvaBKsbQ,h%}_Cq5|o!m%GzkclT,kbh^hcBnVpW>W`#!QXk');
