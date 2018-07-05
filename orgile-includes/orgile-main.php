@@ -20,3 +20,4 @@ include(ORGILE_INC . 'orgile-chromephp.php');
 include(ORGILE_INC . 'orgile-config.php');
 include(ORGILE_INC . 'orgile-query.php');
 include(ORGILE_INC . 'orgile-template-loader.php');
+include(ORGILE_INC . 'orgile-template.php');
