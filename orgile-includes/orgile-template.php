@@ -2,7 +2,7 @@
 
 ChromePhp::info('load orgile-template.php');
 
-function laod_teamplate($template) {
+function load_template($template) {
     ChromePhp::info($template);
     return;
 }

@@ -22,5 +22,7 @@ include(ORGILE_INC . 'class-orgile-query.php');
 // include orgile sources
 include(ORGILE_INC . 'orgile-config.php');
 include(ORGILE_INC . 'orgile-query.php');
-include(ORGILE_INC . 'orgile-template-loader.php');
 include(ORGILE_INC . 'orgile-template.php');
+
+// load template
+include(ORGILE_INC . 'orgile-template-loader.php');
