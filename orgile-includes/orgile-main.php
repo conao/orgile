@@ -26,3 +26,6 @@ include(ORGILE_INC . 'orgile-template.php');
 
 // load template
 include(ORGILE_INC . 'orgile-template-loader.php');
+
+ChromePhp::warn('main complete!');
+ChromePhp::info(get_included_files());
