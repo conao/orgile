@@ -9,9 +9,14 @@
 // }
 // ChromePhp::groupEnd();
 
+
+// define include folder
 define('ORGILE_INC', dirname(__FILE__) . '/');
 
+// include chrome logger
 include(ORGILE_INC . 'orgile-chromephp.php');
+
+// include orgile sources
 include(ORGILE_INC . 'orgile-config.php');
 include(ORGILE_INC . 'orgile-query.php');
 include(ORGILE_INC . 'orgile-template-loader.php');
