@@ -16,6 +16,9 @@ define('ORGILE_INC', dirname(__FILE__) . '/');
 // include chrome logger
 include(ORGILE_INC . 'orgile-chromephp.php');
 
+// include orgile class
+include(ORGILE_INC . 'class-orgile-query.php');
+
 // include orgile sources
 include(ORGILE_INC . 'orgile-config.php');
 include(ORGILE_INC . 'orgile-query.php');
