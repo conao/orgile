@@ -16,5 +16,5 @@ elseif ($orgile_query->is_tag      && load_template('tag')):
 elseif ($orgile_query->is_author   && load_template('author')):
 elseif ($orgile_query->is_date     && load_template('date')):
 elseif ($orgile_query->is_archive  && load_template('archive')):
-else:  load_index_template();
+else:  load_template('index');
 endif;
