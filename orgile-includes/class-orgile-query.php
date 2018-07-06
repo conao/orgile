@@ -20,7 +20,7 @@ class ORGILE_Query {
 
         $request = urldecode($_SERVER['REQUEST_URI']);
         $url = parse_url($request);
-        $req_path = explode('/', $url['path']);
+        $req_path = array_slice(explode('/', $url['path']), 1);
         parse_str($url['query'], $req_params);
         
         ChromePhp::warn($request);
