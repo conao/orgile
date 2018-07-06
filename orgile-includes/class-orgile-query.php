@@ -17,6 +17,13 @@ class ORGILE_Query {
     
     function __construct() {
         ChromePhp::info('create ORGILE_query');
-        ChromePhp::info($_SERVER['REQUEST_URI']);
+
+        $request = urldecode($_SERVER['REQUEST_URI']);
+        $url = parse_url($request);
+        $req_path = explode('/', $url['path']);
+        parse_str($url['query'], $req_params);
+        
+        ChromePhp::warn($request);
+        ChromePhp::warn($req_path, $req_params);
     }
 }
