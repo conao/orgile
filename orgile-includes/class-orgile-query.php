@@ -30,17 +30,12 @@ class ORGILE_Query {
     }
 
     function parse_request($path, $params) {
-        $type = ['archive', 'search', '404', ''];
-        
-        foreach ($type as $target) {
-            if ($path[0] == $target) {
-                call_user_func_array([$this, "parse_" . $target . "_handler"], [$path, $params]);
-                return;
-            }
-        }
+        $types = ['archive', 'search', '404', ''];
+        $inx = array_search($path[0], $types);
 
-        // not match
-        call_user_func_array([$this, "parse_undefined_handler"], [$path, $params]);
+        $template = $inx ? $types[$inx] : 'undefined';
+
+        call_user_func_array([$this, "parse_" . $template . "_handler"], [$path, $params]);
     }
     
     function parse_archive_handler($path, $params) {
