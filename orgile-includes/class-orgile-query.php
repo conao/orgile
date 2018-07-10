@@ -15,6 +15,9 @@ class ORGILE_Query {
     public $is_date     = false;
     public $is_archive  = false;
 
+    private $types = ['archive', 'search', '404', ''];
+    private $req_inx;
+    private $req_type;
     private $req_path;
     private $req_params;
     
@@ -33,12 +36,12 @@ class ORGILE_Query {
     }
 
     function parse_request() {
-        $types = ['archive', 'search', '404', ''];
-        $inx = array_search($this->req_path[0], $types);
+        $this->req_inx = array_search($this->req_path[0], $this->types);
 
-        $template = $inx ? $types[$inx] : 'undefined';
+        $this->req_type = $this->req_inx !== false ? $this->types[$this->req_inx] : 'undefined';
 
-        call_user_func_array([$this, "parse_" . $template . "_handler"], []);
+        call_user_func_array([$this, "parse_" . $this->req_type . "_handler"], []);
+        ChromePhp::warn($this);
     }
     
     function parse_archive_handler() {
