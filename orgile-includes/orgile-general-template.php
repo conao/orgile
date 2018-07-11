@@ -15,6 +15,19 @@ function get_header($name = '') {
     locate_template($templates);
 }
 
+function get_footer($name = '') {
+    // Load footer template.
+
+    $templates = array();
+    if ($name) {
+        $templates[] = "footer-{$name}.php";
+    }
+
+    $templates[] = 'footer.php';
+
+    locate_template($templates);
+}
+
 function locate_template($template_names, $load = false, $require_once = true) {
     // Retrieve the name of the highest priority template file that exists.
     
