@@ -31,9 +31,6 @@ class ORGILE_Query {
         
         ChromePhp::warn($request);
         ChromePhp::warn($this->req_path, $this->req_params);
-
-        $this->parse_request();
-        $this->exec_reqest_hander();
     }
 
     function parse_request() {
