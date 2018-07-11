@@ -19,6 +19,7 @@ class ORGILE_Query {
     private $req_type;
     private $req_path;
     private $req_params;
+    private $req_handler;
     
     function __construct() {
         ChromePhp::info('create ORGILE_query');
@@ -41,6 +42,8 @@ class ORGILE_Query {
 
         call_user_func_array([$this, "parse_" . $this->req_type . "_handler"], []);
         $this->{'is_' . $this->req_type} = true;
+        $this->req_handler = 'parse_' . $this->req_type . '_handler';
+        
         ChromePhp::warn($this);
     }
     
