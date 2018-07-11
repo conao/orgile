@@ -3,16 +3,18 @@
 ChromePhp::info('load class-orgile-query');
 
 class ORGILE_Query {
-    public $is_404      = false;
-    public $is_search   = false;
-    public $is_page     = false;
-    public $is_category = false;
-    public $is_tag      = false;
-    public $is_author   = false;
-    public $is_date     = false;
-    public $is_archive  = false;
-
-    private $types = ['archive', 'search', '404', ''];
+    public $is_404       = false;
+    public $is_archive   = false;
+    public $is_search    = false;
+    public $is_page      = false;
+    public $is_category  = false;
+    public $is_tag       = false;
+    public $is_author    = false;
+    public $is_date      = false;
+    public $is_          = false;
+    public $is_undefined = false;
+    
+    private $types = ['404', 'archive', 'search', 'page', 'category', 'tag', 'author', 'date', ''];
     private $req_inx;
     private $req_type;
     private $req_path;
@@ -38,9 +40,14 @@ class ORGILE_Query {
         $this->req_type = $this->req_inx !== false ? $this->types[$this->req_inx] : 'undefined';
 
         call_user_func_array([$this, "parse_" . $this->req_type . "_handler"], []);
+        $this->{'is_' . $this->req_type} = true;
         ChromePhp::warn($this);
     }
     
+    function parse_404_handler() {
+        ChromePhp::info("handler: " . __FUNCTION__);
+    }
+
     function parse_archive_handler() {
         ChromePhp::info("handler: " . __FUNCTION__);
     }
@@ -49,7 +56,23 @@ class ORGILE_Query {
         ChromePhp::info("handler: " . __FUNCTION__);
     }
 
-    function parse_404_handler() {
+    function parse_page_handler() {
+        ChromePhp::info("handler: " . __FUNCTION__);
+    }
+
+    function parse_category_handler() {
+        ChromePhp::info("handler: " . __FUNCTION__);
+    }
+
+    function parse_tag_handler() {
+        ChromePhp::info("handler: " . __FUNCTION__);
+    }
+
+    function parse_author_handler() {
+        ChromePhp::info("handler: " . __FUNCTION__);
+    }
+
+    function parse_date_handler() {
         ChromePhp::info("handler: " . __FUNCTION__);
     }
 
