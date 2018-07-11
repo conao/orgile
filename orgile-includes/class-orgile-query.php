@@ -44,43 +44,43 @@ class ORGILE_Query {
         ChromePhp::warn($this);
     }
     
-    function parse_404_handler() {
+    private function parse_404_handler() {
         ChromePhp::info("handler: " . __FUNCTION__);
     }
 
-    function parse_archive_handler() {
+    private function parse_archive_handler() {
         ChromePhp::info("handler: " . __FUNCTION__);
     }
 
-    function parse_search_handler() {
+    private function parse_search_handler() {
         ChromePhp::info("handler: " . __FUNCTION__);
     }
 
-    function parse_page_handler() {
+    private function parse_page_handler() {
         ChromePhp::info("handler: " . __FUNCTION__);
     }
 
-    function parse_category_handler() {
+    private function parse_category_handler() {
         ChromePhp::info("handler: " . __FUNCTION__);
     }
 
-    function parse_tag_handler() {
+    private function parse_tag_handler() {
         ChromePhp::info("handler: " . __FUNCTION__);
     }
 
-    function parse_author_handler() {
+    private function parse_author_handler() {
         ChromePhp::info("handler: " . __FUNCTION__);
     }
 
-    function parse_date_handler() {
+    private function parse_date_handler() {
         ChromePhp::info("handler: " . __FUNCTION__);
     }
 
-    function parse__handler() {
+    private function parse__handler() {
         ChromePhp::info("handler: " . __FUNCTION__);
     }
 
-    function parse_undefined_handler() {
+    private function parse_undefined_handler() {
         ChromePhp::info("handler: " . __FUNCTION__);
     }
 }
