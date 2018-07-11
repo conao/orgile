@@ -12,7 +12,7 @@ function get_header($name = '') {
 
     $templates[] = 'header.php';
 
-    locate_template($templates);
+    locate_template($templates, true);
 }
 
 function get_footer($name = '') {
@@ -25,7 +25,7 @@ function get_footer($name = '') {
 
     $templates[] = 'footer.php';
 
-    locate_template($templates);
+    locate_template($templates, true);
 }
 
 function get_sidebar($name = '') {
@@ -38,7 +38,7 @@ function get_sidebar($name = '') {
 
     $templates[] = 'sidebar.php';
 
-    locate_template($templates);
+    locate_template($templates, true);
 }
 
 function get_template_part($slug, $name = '') {
