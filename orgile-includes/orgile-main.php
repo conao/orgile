@@ -20,6 +20,7 @@ include(ORGILE_INC . 'orgile-chromephp.php');
 include(ORGILE_INC . 'class-orgile-query.php');
 
 // include orgile sources
+include(ORGILE_INC . 'orgile-general-template.php');
 include(ORGILE_INC . 'orgile-config.php');
 // include(ORGILE_INC . 'orgile-query.php');
 
