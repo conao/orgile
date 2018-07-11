@@ -28,6 +28,19 @@ function get_footer($name = '') {
     locate_template($templates);
 }
 
+function get_sidebar($name = '') {
+    // Load sidebar template.
+
+    $templates = array();
+    if ($name) {
+        $templates[] = "sidebar-{$name}.php";
+    }
+
+    $templates[] = 'sidebar.php';
+
+    locate_template($templates);
+}
+
 function locate_template($template_names, $load = false, $require_once = true) {
     // Retrieve the name of the highest priority template file that exists.
     
