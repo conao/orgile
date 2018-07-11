@@ -41,6 +41,19 @@ function get_sidebar($name = '') {
     locate_template($templates);
 }
 
+function get_template_part($slug, $name = '') {
+    // Loads a template part into a template.
+
+    $templates = array();
+    if ($name){
+        $templates[] = "{$slug}-{$name}.php";
+    }
+    
+    $templates[] = "{$slug}.php";
+
+    locate_template($templates, true, false);
+}
+
 function locate_template($template_names, $load = false, $require_once = true) {
     // Retrieve the name of the highest priority template file that exists.
     
