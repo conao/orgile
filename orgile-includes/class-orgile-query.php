@@ -33,6 +33,7 @@ class ORGILE_Query {
         ChromePhp::warn($this->req_path, $this->req_params);
 
         $this->parse_request();
+        $this->exec_reqest_hander();
     }
 
     function parse_request() {
@@ -40,11 +41,14 @@ class ORGILE_Query {
 
         $this->req_type = $this->req_inx !== false ? $this->types[$this->req_inx] : 'undefined';
 
-        call_user_func_array([$this, "parse_" . $this->req_type . "_handler"], []);
         $this->{'is_' . $this->req_type} = true;
         $this->req_handler = 'parse_' . $this->req_type . '_handler';
         
         ChromePhp::warn($this);
+    }
+
+    function exec_reqest_hander() {
+        call_user_func_array([$this, $this->req_handler], []);
     }
     
     private function parse_404_handler() {
